@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11D6D0BE2DB7AA00008C2A26 /* WKIPCheckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D6D0BD2DB7AA00008C2A26 /* WKIPCheckManager.swift */; };
+		11D6D0C02DB7B7F6008C2A26 /* GeoLite2-Country.mmdb in Resources */ = {isa = PBXBuildFile; fileRef = 11D6D0BF2DB7B7F6008C2A26 /* GeoLite2-Country.mmdb */; };
 		7130BFC524C6817600B9E04B /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7130BFC424C6817600B9E04B /* NotificationService.m */; };
 		7130BFC924C6817600B9E04B /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7130BFC124C6817600B9E04B /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7130BFD424C6832F00B9E04B /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7130BFD324C6832F00B9E04B /* UserNotifications.framework */; };
@@ -76,6 +78,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		11D6D0BD2DB7AA00008C2A26 /* WKIPCheckManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKIPCheckManager.swift; sourceTree = "<group>"; };
+		11D6D0BF2DB7B7F6008C2A26 /* GeoLite2-Country.mmdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GeoLite2-Country.mmdb"; sourceTree = "<group>"; };
 		5CA0841FAD4ACC73F9DC603F /* Pods_TangSengDaoDaoiOSBase_TangSengDaoDaoiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TangSengDaoDaoiOSBase_TangSengDaoDaoiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71018ED405ABC6ED8448075E /* Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.release.xcconfig"; path = "Target Support Files/Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS/Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.release.xcconfig"; sourceTree = "<group>"; };
 		71275E7D240A7BD600A7502C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -173,6 +177,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11D6D0BC2DB7A9BB008C2A26 /* WKCheckIP */ = {
+			isa = PBXGroup;
+			children = (
+				11D6D0BF2DB7B7F6008C2A26 /* GeoLite2-Country.mmdb */,
+				11D6D0BD2DB7AA00008C2A26 /* WKIPCheckManager.swift */,
+			);
+			path = WKCheckIP;
+			sourceTree = "<group>";
+		};
 		1882D30109100A187BA46643 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +282,7 @@
 		71D6960523926E3500D092BA /* TangSengDaoDao */ = {
 			isa = PBXGroup;
 			children = (
+				11D6D0BC2DB7A9BB008C2A26 /* WKCheckIP */,
 				71AA883E24057A6B000FCF65 /* TangSengDaoDao.entitlements */,
 				71D6960623926E3500D092BA /* AppDelegate.h */,
 				71D6960723926E3500D092BA /* AppDelegate.m */,
@@ -421,6 +435,7 @@
 				71D6961323926E3700D092BA /* LaunchScreen.storyboard in Resources */,
 				719FDA5D2595FBFC000C25D6 /* Localizable.strings in Resources */,
 				71F7E3DC2A47F66900E8D20D /* QUESTION.md in Resources */,
+				11D6D0C02DB7B7F6008C2A26 /* GeoLite2-Country.mmdb in Resources */,
 				71D6961023926E3700D092BA /* Assets.xcassets in Resources */,
 				7191FCB323A6139A00FFFDC1 /* README.md in Resources */,
 				71D6960E23926E3600D092BA /* Main.storyboard in Resources */,
@@ -492,6 +507,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11D6D0BE2DB7AA00008C2A26 /* WKIPCheckManager.swift in Sources */,
 				71D6960B23926E3600D092BA /* ViewController.m in Sources */,
 				71C88A0726CA06E4000A42EE /* SELUpdateAlert.m in Sources */,
 				71C88A0826CA06E4000A42EE /* SELUpdateAlertConst.m in Sources */,
@@ -560,7 +576,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H8PU463W68;
+				DEVELOPMENT_TEAM = 93D34P93CC;
 				INFOPLIST_FILE = NotificationService/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -569,7 +585,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.xinbida.tangsengdaodao.NotificationService;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinbida.tangtestsengdaodao.test.NotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -584,7 +600,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H8PU463W68;
+				DEVELOPMENT_TEAM = 93D34P93CC;
 				INFOPLIST_FILE = NotificationService/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -593,7 +609,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.xinbida.tangsengdaodao.NotificationService;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinbida.tangtestsengdaodao.test.NotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -608,7 +624,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H8PU463W68;
+				DEVELOPMENT_TEAM = 93D34P93CC;
 				INFOPLIST_FILE = NotificationContent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -617,7 +633,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.xinbida.tangsengdaodao.NotificationContent;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinbida.tangtestsengdaodao.test.NotificationContent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -632,7 +648,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H8PU463W68;
+				DEVELOPMENT_TEAM = 93D34P93CC;
 				INFOPLIST_FILE = NotificationContent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -641,7 +657,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.xinbida.tangsengdaodao.NotificationContent;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinbida.tangtestsengdaodao.test.NotificationContent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -791,7 +807,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = H8PU463W68;
+				DEVELOPMENT_TEAM = 93D34P93CC;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -800,7 +816,7 @@
 				);
 				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = TangSengDaoDao/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "唐僧叨叨";
+				INFOPLIST_KEY_CFBundleDisplayName = Bage;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -811,7 +827,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-Objc",
@@ -876,7 +892,7 @@
 					"-framework",
 					"\"WuKongIMSDK\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xinbida.tangsengdaodao;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinbida.tangtestsengdaodao.test;
 				PRODUCT_NAME = TangSengDaoDao;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -901,7 +917,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = H8PU463W68;
+				DEVELOPMENT_TEAM = 93D34P93CC;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -910,7 +926,7 @@
 				);
 				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = TangSengDaoDao/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "唐僧叨叨";
+				INFOPLIST_KEY_CFBundleDisplayName = Bage;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -921,7 +937,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-Objc",
@@ -986,7 +1002,7 @@
 					"-framework",
 					"\"WuKongIMSDK\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xinbida.tangsengdaodao;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinbida.tangtestsengdaodao.test;
 				PRODUCT_NAME = TangSengDaoDao;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

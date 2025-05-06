@@ -15,9 +15,12 @@
 
 #import "SELUpdateAlert.h"
 
+#import "TangSengDaoDao-Bridging-Header.h"
+#import "TangSengDaoDao-Swift.h"
+#import "LLDynamicLaunchScreen.h"
 
-#define SERVER_IP @"api.botgate.cn" // xxx.xxx.xx.xx:8090
-#define HTTPS_ON true // https开关
+#define SERVER_IP @"api.newhxchat.top/api" //@"api.botgate.cn" // xxx.xxx.xx.xx:8090
+#define HTTPS_ON false // https开关
 
 
 #define BASE_URL [NSString stringWithFormat:@"%@://%@/v1/",HTTPS_ON?@"https":@"http",SERVER_IP]
@@ -50,23 +53,60 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor grayColor];
+    UIStoryboard *launchSB = [UIStoryboard storyboardWithName:@"LaunchScreen" bundle:nil];
+        UIViewController *splashVC = [launchSB instantiateInitialViewController];
+    self.window.rootViewController = splashVC;
     [self.window makeKeyAndVisible];
+    
+    // 获取客户端真实ip
+    [WKIPCheckManager.shared getAPIAddressWithCompletion:^(NSString * _Nullable apiAddress, NSError * _Nullable error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // 4. 实例化真正的首页控制器（例：从 Main.storyboard）
+            UIStoryboard *mainSB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            UIViewController *mainVC = [mainSB instantiateInitialViewController];
+            // 5. 做一个淡入淡出过渡动画
+            [UIView transitionWithView:self.window
+                              duration:0.4
+                               options:UIViewAnimationOptionTransitionCrossDissolve
+                            animations:^{
+                if (error) {
+                    [self initializeAppWithBaseUrl:nil];
+                    return;
+                }
+                NSLog(@"apiAddress: %@", apiAddress);
+                [self initializeAppWithBaseUrl:apiAddress];
+                            }
+                            completion:nil];
+        });
+        
+    }];
 
+    return YES;
+}
+
+
+- (void)initializeAppWithBaseUrl:(NSString *)baseUrl {
     // 加载登录信息
     [[WKApp shared].loginInfo load];
-
+        
+    NSString *apiBaseUrl = baseUrl ? [WKIPCheckManager wk_baseUrlWithUrl:baseUrl] : API_BASE_URL;
+    NSString *fileBaseUrl = baseUrl ? [WKIPCheckManager wk_baseUrlWithUrl:baseUrl] : FILE_BASE_URL;
+    NSString *fileBrowseUrl = baseUrl ? [WKIPCheckManager wk_baseUrlWithUrl:baseUrl] : FILE_BROWSE_URL;
+    NSString *imageBrowseUrl = baseUrl ? [WKIPCheckManager wk_baseUrlWithUrl:baseUrl] : IMAGE_BROWSE_URL;
+    NSString *webUrl = baseUrl ? [WKIPCheckManager wk_webUrlWithUrl:baseUrl] : WEB_URL;
+    
     // app配置
     WKAppConfig *config = [WKAppConfig new];
-    config.apiBaseUrl = API_BASE_URL; // api地址
-    config.fileBaseUrl = FILE_BASE_URL; // 文件上传地址
-    config.fileBrowseUrl = FILE_BROWSE_URL; // 文件预览地址
-    config.imageBrowseUrl = IMAGE_BROWSE_URL; // 图片预览地址
-    config.reportUrl = [NSString stringWithFormat:@"%@report/html",API_BASE_URL]; //举报地址
-    config.privacyAgreementUrl = [NSString stringWithFormat:@"%@privacy_policy.html",WEB_URL]; //隐私协议
-    config.userAgreementUrl = [NSString stringWithFormat:@"%@user_agreement.html",WEB_URL]; //用户协议
+    config.apiBaseUrl = apiBaseUrl; // api地址
+    config.fileBaseUrl = fileBaseUrl; // 文件上传地址
+    config.fileBrowseUrl = fileBrowseUrl; // 文件预览地址
+    config.imageBrowseUrl = imageBrowseUrl; // 图片预览地址
+    config.reportUrl = [NSString stringWithFormat:@"%@report/html",apiBaseUrl]; //举报地址
+    config.privacyAgreementUrl = [NSString stringWithFormat:@"%@privacy_policy.html",webUrl]; //隐私协议
+    config.userAgreementUrl = [NSString stringWithFormat:@"%@user_agreement.html",webUrl]; //用户协议
     [WKApp shared].config = config;
     
     // app首页设置
@@ -74,8 +114,8 @@
         WKMainTabController *homeViewController =  [WKMainTabController new];
         return homeViewController;
     };
-
-   
+    
+    
     // app初始化
     [[WKApp shared] appInit];
     
@@ -86,8 +126,6 @@
             self.window.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
         }
     }
-   
-    return YES;
 }
 
 -(void) applicationWillEnterForeground:(UIApplication *)application {
@@ -177,4 +215,6 @@
 }
 
 @end
+
+
 

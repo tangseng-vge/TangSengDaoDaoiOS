@@ -4,7 +4,7 @@ workspace 'TangSengDaoDaoiOS.xcworkspace'
 
 post_install do |installer|
     # 填写你自己的开发者团队的team id
-    dev_team = "H8PU463W68"
+    dev_team = "93D34P93CC"
     project = installer.aggregate_targets[0].user_project
     project.targets.each do |target|
         target.build_configurations.each do |config|
@@ -30,13 +30,15 @@ end
 
 
 abstract_target 'TangSengDaoDaoiOSBase' do
-  
+  use_frameworks!
 #  pod 'lottie-ios', '~> 2.5.3'
   pod 'Socket.IO-Client-Swift'
   pod 'SSZipArchive', '~> 2.2.3'
   pod 'SocketRocket'
   pod 'Aspects'
   pod 'ReactiveObjC'
+  pod "MMDB-Swift"
+  pod 'LLDynamicLaunchScreen', '~> 1.0.8'
 
   target 'TangSengDaoDaoiOS' do
     project 'TangSengDaoDaoiOS.xcodeproj'

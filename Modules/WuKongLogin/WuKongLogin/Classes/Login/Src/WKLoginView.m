@@ -67,6 +67,9 @@
     [self.passwordBoxView addSubview:self.passwordTextField];
     [self.passwordBoxView addSubview:self.eyeBtn];
     
+#pragma mark 隐藏忘记密码
+    self.forgetPwdBtn.hidden = YES;
+    
     [self addSubview:self.forgetPwdBtn];
     [self addSubview:self.loginBtn];
     [self addSubview:self.registerTipLbl];

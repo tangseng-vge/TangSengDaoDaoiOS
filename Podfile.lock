@@ -44,11 +44,13 @@ PODS:
   - libwebp/mux (1.2.4):
     - libwebp/demux
   - libwebp/webp (1.2.4)
+  - LLDynamicLaunchScreen (1.0.8)
   - lottie-ios (2.5.3)
   - M80AttributedLabel (1.9.9)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - MJRefresh (3.7.5)
+  - MMDB-Swift (0.5.1)
   - PromiseKit/CorePromise (6.18.1)
   - ReactiveObjC (3.1.1)
   - SDWebImage (5.9.5):
@@ -139,6 +141,8 @@ DEPENDENCIES:
   - Aspects
   - AsyncDisplayKit (from `https://github.com/tangtaoit/AsyncDisplayKit.git`)
   - librlottie (from `https://github.com/tangtaoit/librlottie.git`)
+  - LLDynamicLaunchScreen (~> 1.0.8)
+  - MMDB-Swift
   - ReactiveObjC
   - Socket.IO-Client-Swift
   - SocketRocket
@@ -165,11 +169,13 @@ SPEC REPOS:
     - GZIP
     - LBXScan
     - libwebp
+    - LLDynamicLaunchScreen
     - lottie-ios
     - M80AttributedLabel
     - Masonry
     - MBProgressHUD
     - MJRefresh
+    - MMDB-Swift
     - PromiseKit
     - ReactiveObjC
     - SDWebImage
@@ -235,11 +241,13 @@ SPEC CHECKSUMS:
   LBXScan: 90ca10d0c38fb4a5a6980d7782354f3f69f50093
   librlottie: b1439ecf2d19dc5db01b9fe94975548863c56cc7
   libwebp: f62cb61d0a484ba548448a4bd52aabf150ff6eef
+  LLDynamicLaunchScreen: 64cf01447cedd146be42d8552b82e2a9719cc54c
   lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
   M80AttributedLabel: 77fedfe63804c989a6de0fa4d400ea8cad3ab441
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  MMDB-Swift: c1089703b65a3d1301fc92ff8f55d4794a569214
   PromiseKit: 49d70c53d5d20e346beaea4b276b5dd2ab446bb4
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDWebImage: 0b2ba0d56479bf6a45ecddbfd5558bea93150d25
@@ -263,6 +271,6 @@ SPEC CHECKSUMS:
   ZLImageEditor: ee86f044fb7c5dec6b5de49eb7bb6fd42286f2ae
   ZLPhotoBrowser: 6fb0eff03c8269001e29ef233e7bdab0691e05fe
 
-PODFILE CHECKSUM: 8f3d987a251697eb20ae68cfc22750d44234e37b
+PODFILE CHECKSUM: a1b71bac37719a64384e4000eaece682861b8d11
 
 COCOAPODS: 1.16.2
