@@ -1,0 +1,38 @@
+{
+  "name": "WuKongAdvanced",
+  "version": "0.1.0",
+  "summary": "A short description of WuKongAdvanced.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/3895878/WuKongAdvanced",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "3895878": "tangtao@tgo.ai"
+  },
+  "source": {
+    "git": "https://github.com/tangtaoit/WuKongAdvanced.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source_files": "WuKongAdvanced/Classes/**/*",
+  "resources": [
+    "WuKongAdvanced/Assets/Lang"
+  ],
+  "resource_bundles": {
+    "WuKongAdvanced_images": [
+      "WuKongAdvanced/Assets/Images.xcassets"
+    ],
+    "WuKongAdvanced_resources": [
+      "WuKongAdvanced/Assets/Other"
+    ]
+  },
+  "dependencies": {
+    "WuKongBase": [],
+    "WuKongIMSDK": [],
+    "AsyncDisplayKit": []
+  }
+}

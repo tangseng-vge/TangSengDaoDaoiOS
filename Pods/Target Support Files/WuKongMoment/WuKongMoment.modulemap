@@ -1,0 +1,6 @@
+framework module WuKongMoment {
+  umbrella header "WuKongMoment-umbrella.h"
+
+  export *
+  module * { export * }
+}

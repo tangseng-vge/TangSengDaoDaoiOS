@@ -1,0 +1,61 @@
+
+// 常用
+
+"编辑"="Edit";
+"%ld 人已读"="%ld Readed";
+
+"群聊头像"="Group Avatar";
+"群备注"="Group Remark";
+
+"设置当前聊天背景"="Chat Background";
+
+// 阅后即焚
+"阅后即焚"="Burn After Reading";
+"消息阅读后%@自动销毁"="Messages will be destoryed in %@ after reading";
+"退出聊天后，已读消息自动销毁"="Messages will be destoryed after leaving chat window";
+"%ld秒"="%ld second";
+"%ld分钟"="%ld minute";
+"对方阅读消息后，根据设置的时间自动销毁"= "Messages will automatically disappear after read according to the time-lapse setting.";
+
+// WKConversationNotifySettingVC
+
+"消息通知设置" = "Message Notification Settings";
+
+// WKConversationNotifySettingVM
+"在对话中的截屏，各方均会收到通知"= "Take screenshots in the conversation and all parties will be notified";
+"截屏通知"="Screenshot Notification";
+"在对话中的消息撤回，各方均会收到通知"="Messages in the conversation are withdrawn, all parties will be notified";
+"撤回通知"="Withdrawal Notice";
+"关闭后，成员进群将不会响铃/震动"="After closing, members will not ring/vibrate when entering the group";
+"成员进群提醒"="Group Reminder";
+
+
+// WKConversationSettingVM
+
+"消息通知设置"="Message Notification";
+"消息回执"="Receipt";
+"开启后，发送的聊天信息会提示已读未读情况"="After turned on, the chat message sent will prompt read and unread status";
+
+
+
+// WKReceiptListVC
+
+"消息阅读状态"="Message reading status";
+"已读(%d)"="Readed(%d)";
+"未读(%d)"="Unread(%d)";
+"%ld 人回应"="%ld Reactions";
+"聊天背景"="Chat Background";
+"从手机相册选择"="Choose from  Album";
+"拍一张"="Take Photo";
+"拍照"="Take Photo";
+"保存图片"="Save Photo";
+"保存成功！"="Saved successfully!";
+"保存失败！"="Save failed";
+
+
+// WKChatBackgroundPreviewVC
+
+"背景预览"="Background Preview";
+"设置背景"="Set Background";
+"旋转"="Rotate";
+"设置成功！"="Set Success!";

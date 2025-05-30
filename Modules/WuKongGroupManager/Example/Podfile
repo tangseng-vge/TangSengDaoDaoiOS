@@ -1,0 +1,6 @@
+use_frameworks!
+target 'LiMaoGroupManager_Tests' do
+  pod 'LiMaoGroupManager', :path => '../'
+  
+  
+end

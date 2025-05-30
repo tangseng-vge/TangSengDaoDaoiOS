@@ -1,0 +1,16 @@
+PODS:
+  - LiMaoSmallVideo (0.1.0)
+
+DEPENDENCIES:
+  - LiMaoSmallVideo (from `../`)
+
+EXTERNAL SOURCES:
+  LiMaoSmallVideo:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LiMaoSmallVideo: 17d94c8b3a2bec569e96e1c8b22f82acc90a0f48
+
+PODFILE CHECKSUM: f972baa47abd5be0dc3fcf5f806aefa90ba37820
+
+COCOAPODS: 1.8.0

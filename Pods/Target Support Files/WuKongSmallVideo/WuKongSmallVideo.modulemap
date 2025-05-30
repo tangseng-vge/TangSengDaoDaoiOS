@@ -1,0 +1,6 @@
+framework module WuKongSmallVideo {
+  umbrella header "WuKongSmallVideo-umbrella.h"
+
+  export *
+  module * { export * }
+}

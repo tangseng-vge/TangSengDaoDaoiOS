@@ -372,6 +372,10 @@ static NSMutableDictionary *flameNodeCacheDict;
     if(self.messageModel.contentType == WK_TYPING) {
         return;
     }
+    
+    // fix: 输入框输入时 长按之前的信息弹出菜单没有隐藏键盘
+    [self.window endEditing:YES];
+    
     [self.conversationContext longPressMessageCell:self gestureRecognizer:gestureRecognizer];
     
 }

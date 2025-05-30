@@ -1,0 +1,52 @@
+
+"好的"="Ok";
+"提示"="Prompt";
+"取消"="Cancel";
+
+"群聊头像"="Group Avatar";
+"群备注"="Group Remark";
+
+"进群方式"="Join group way";
+"群内禁言"="Banned in the group";
+
+"添加黑名单成员"="Add blacklist members";
+
+"%@在群黑名单中"="%@ in the group blacklist";
+"群主或管理员已启用\"群聊邀请确认\"，邀请朋友进群可向群主或群管理员描述原因。"="The group owner or administrator has enabled \"group chat invitation confirmation\". Invite friends to the group can describe the reason to the group owner or group administrator.";
+"说明邀请理由"="Explain the reason for the invitation";
+"已发送"="Has been sent";
+"删除群成员"="Delete group members";
+"群黑名单"="Group Blacklist";
+"把“%@”拉出群黑名单？"="Pull \"%@\" out of the group blacklist?";
+
+"群管理"="Group Management";
+
+"选择成员"="Select member";
+
+
+// WKGroupManagerVC
+
+"取消“%@”的管理员身份？"="Cancel the administrator status of \"%@\"?";
+"你将自动放弃群主身份。"="You will automatically give up your identity as the group owner.";
+"选择新的群主"="Choose a new owner";
+
+// WKGroupManagerVM
+
+"添加管理员"="Add Manager";
+"群主、管理员"="Group owner, administrator";
+"选择管理员"="Choose an administrator";
+"启用后，群成员需要群主或管理员确认才能邀请朋友进群。扫描二维码进群将同时停用。"="Once enabled, group members need to be confirmed by the owner or administrator to invite friends into the group. Scanning the QR code to enter the group will also be disabled.";
+"群聊邀请确认"="Invitation Approval";
+"群主管理权转让"="Transfer Ownership";
+"成员设置"="Member settings";
+"全员禁言启用后，只允许群主和管理员发言。"="After all members mute is enabled, only group owners and managers are allowed to speak.";
+"全员禁言"="Members Mute";
+"禁止群成员互加好友"="Forbid Add Friend";
+"允许新成员查看历史消息"="Allow view history messages";
+"开启后，群成员无法通过该群添加好友。"="After it is turned on, group members cannot add friends through the group.";
+"开启后，新加入聊天的成员能看见以前的聊天记录。"="When enabled, new members who join the chat can see the previous chat history.";
+
+"解散群聊后，群成员和群主都将被移出群聊。"="解散群聊后，群成员和群主都将被移出群聊。";
+"解散该群聊"="解散该群聊";
+
+

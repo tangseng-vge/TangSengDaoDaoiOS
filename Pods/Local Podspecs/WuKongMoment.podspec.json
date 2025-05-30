@@ -1,0 +1,41 @@
+{
+  "name": "WuKongMoment",
+  "version": "0.1.0",
+  "summary": "A short description of WuKongMoment.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/tangtaoit/WuKongMoment",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "tangtaoit": "tt@tgo.ai"
+  },
+  "source": {
+    "git": "https://github.com/tangtaoit/WuKongMoment.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source_files": "WuKongMoment/Classes/**/*",
+  "private_header_files": "WuKongMoment/Classes/Vendor/**/*",
+  "resource_bundles": {
+    "WuKongMoment_images": [
+      "WuKongMoment/Assets/Images.xcassets"
+    ],
+    "WuKongMoment_resources": [
+      "WuKongMoment/Assets/DB"
+    ]
+  },
+  "resources": [
+    "WuKongMoment/Assets/Lang"
+  ],
+  "dependencies": {
+    "WuKongBase": [],
+    "WuKongIMSDK": [],
+    "SDWebImage": [
+      "~> 5.9.1"
+    ]
+  }
+}

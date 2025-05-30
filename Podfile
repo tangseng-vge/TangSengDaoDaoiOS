@@ -57,6 +57,13 @@ abstract_target 'TangSengDaoDaoiOSBase' do
   pod 'WuKongContacts', :path => './Modules/WuKongContacts'  ## 联系人模块
   pod 'WuKongDataSource', :path => './Modules/WuKongDataSource'  ## 数据源
 
+  pod 'WuKongAdvanced', :path => './Modules/WuKongAdvanced'  ## 旗舰功能模块
+  pod 'WuKongFile', :path => './Modules/WuKongFile'  ## 文件模块
+  pod 'WuKongGroupManager', :path => './Modules/WuKongGroupManager'  ## 群管理模块
+  pod 'WuKongMoment', :path => './Modules/WuKongMoment'  ## 朋友圈
+  pod 'WuKongSmallVideo', :path => './Modules/WuKongSmallVideo'  ## 小视频模块
+  
+  
   end
   
 end

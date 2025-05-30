@@ -19,6 +19,7 @@ ${BUILT_PRODUCTS_DIR}/FPSCounter/FPSCounter.framework
 ${BUILT_PRODUCTS_DIR}/GZIP/GZIP.framework
 ${BUILT_PRODUCTS_DIR}/LBXScan/LBXScan.framework
 ${BUILT_PRODUCTS_DIR}/M80AttributedLabel/M80AttributedLabel.framework
+${BUILT_PRODUCTS_DIR}/MBCircularProgressBar/MBCircularProgressBar.framework
 ${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
 ${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework
 ${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
@@ -30,11 +31,16 @@ ${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework
 ${BUILT_PRODUCTS_DIR}/TOCropViewController/TOCropViewController.framework
 ${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework
 ${BUILT_PRODUCTS_DIR}/Toast/Toast.framework
+${BUILT_PRODUCTS_DIR}/WuKongAdvanced/WuKongAdvanced.framework
 ${BUILT_PRODUCTS_DIR}/WuKongBase/WuKongBase.framework
 ${BUILT_PRODUCTS_DIR}/WuKongContacts/WuKongContacts.framework
 ${BUILT_PRODUCTS_DIR}/WuKongDataSource/WuKongDataSource.framework
+${BUILT_PRODUCTS_DIR}/WuKongFile/WuKongFile.framework
+${BUILT_PRODUCTS_DIR}/WuKongGroupManager/WuKongGroupManager.framework
 ${BUILT_PRODUCTS_DIR}/WuKongIMSDK/WuKongIMSDK.framework
 ${BUILT_PRODUCTS_DIR}/WuKongLogin/WuKongLogin.framework
+${BUILT_PRODUCTS_DIR}/WuKongMoment/WuKongMoment.framework
+${BUILT_PRODUCTS_DIR}/WuKongSmallVideo/WuKongSmallVideo.framework
 ${BUILT_PRODUCTS_DIR}/YBImageBrowser/YBImageBrowser.framework
 ${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework
 ${BUILT_PRODUCTS_DIR}/ZLImageEditor/ZLImageEditor.framework

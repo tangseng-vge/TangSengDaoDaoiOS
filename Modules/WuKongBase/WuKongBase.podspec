@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WuKongBase'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of WuKongBase.'
 
 # This description is used to generate tags and improve search results.
@@ -74,7 +74,8 @@ TODO: Add long description of the pod here.
   s.dependency 'M80AttributedLabel', '~> 1.9.9'
   s.dependency 'YBImageBrowser/NOSD','~> 3.0'
   s.dependency 'YYImage/WebP','~> 1.0.4'
-  s.dependency 'TZImagePickerController', '~>3.6.4'
+#  s.dependency 'TZImagePickerController', '~>3.6.4'
+  s.dependency 'TZImagePickerController', '~>3.8.6'
 #  s.dependency 'MenuItemKit', '~> 4.0.0'
   s.dependency 'LBXScan/LBXNative', '~> 2.5'
   s.dependency 'LBXScan/LBXZXing', '~> 2.5'

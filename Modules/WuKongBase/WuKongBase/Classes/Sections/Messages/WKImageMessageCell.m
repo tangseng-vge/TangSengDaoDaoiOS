@@ -227,6 +227,9 @@
     if(!self.messageModel) {
         return;
     }
+    // fix: 输入文字的时候查看图片 不会隐藏键盘
+    [self.window endEditing:YES];
+    
     __weak typeof(self) weakSelf = self;
     
     WKImageBrowser *imageBrowser = [[WKImageBrowser alloc] init];

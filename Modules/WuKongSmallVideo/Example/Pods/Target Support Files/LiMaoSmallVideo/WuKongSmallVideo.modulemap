@@ -1,0 +1,6 @@
+framework module LiMaoSmallVideo {
+  umbrella header "LiMaoSmallVideo-umbrella.h"
+
+  export *
+  module * { export * }
+}

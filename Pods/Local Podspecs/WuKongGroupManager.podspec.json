@@ -1,0 +1,34 @@
+{
+  "name": "WuKongGroupManager",
+  "version": "0.1.0",
+  "summary": "A short description of WuKongGroupManager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/3895878/WuKongGroupManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "3895878": "tangtao@tgo.ai"
+  },
+  "source": {
+    "git": "https://github.com/tangtaoit/WuKongGroupManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source_files": "WuKongGroupManager/Classes/**/*",
+  "resource_bundles": {
+    "WuKongGroupManager_images": [
+      "WuKongGroupManager/Assets/Images.xcassets"
+    ]
+  },
+  "resources": [
+    "WuKongGroupManager/Assets/Lang"
+  ],
+  "dependencies": {
+    "WuKongBase": [],
+    "WuKongIMSDK": []
+  }
+}

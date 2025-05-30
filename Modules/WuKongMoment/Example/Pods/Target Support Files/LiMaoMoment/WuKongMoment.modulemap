@@ -1,0 +1,6 @@
+framework module LiMaoMoment {
+  umbrella header "LiMaoMoment-umbrella.h"
+
+  export *
+  module * { export * }
+}

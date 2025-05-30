@@ -48,6 +48,7 @@ PODS:
   - lottie-ios (2.5.3)
   - M80AttributedLabel (1.9.9)
   - Masonry (1.1.0)
+  - MBCircularProgressBar (0.3.5)
   - MBProgressHUD (1.1.0)
   - MJRefresh (3.7.5)
   - MMDB-Swift (0.5.1)
@@ -74,8 +75,16 @@ PODS:
   - Starscream (3.1.1)
   - Toast (4.0.0)
   - TOCropViewController (2.5.5)
-  - TZImagePickerController (3.6.9)
-  - WuKongBase (0.1.0):
+  - TZImagePickerController (3.8.9):
+    - TZImagePickerController/Basic (= 3.8.9)
+    - TZImagePickerController/Location (= 3.8.9)
+  - TZImagePickerController/Basic (3.8.9)
+  - TZImagePickerController/Location (3.8.9)
+  - WuKongAdvanced (0.1.0):
+    - AsyncDisplayKit
+    - WuKongBase
+    - WuKongIMSDK
+  - WuKongBase (0.1.1):
     - ActionSheetPicker-3.0
     - AFNetworking (~> 4.0)
     - AsyncDisplayKit (~> 1.0)
@@ -99,7 +108,7 @@ PODS:
     - SDWebImageWebPCoder (~> 0.6.1)
     - Toast (~> 4.0)
     - TOCropViewController (~> 2.5.3)
-    - TZImagePickerController (~> 3.6.4)
+    - TZImagePickerController (~> 3.8.6)
     - WuKongIMSDK
     - YBImageBrowser/NOSD (~> 3.0)
     - YYImage/WebP (~> 1.0.4)
@@ -114,6 +123,13 @@ PODS:
   - WuKongDataSource (0.1.0):
     - WuKongBase
     - WuKongIMSDK
+  - WuKongFile (0.1.0):
+    - MBCircularProgressBar
+    - WuKongBase
+    - WuKongIMSDK
+  - WuKongGroupManager (0.1.0):
+    - WuKongBase
+    - WuKongIMSDK
   - WuKongIMSDK (1.1.0):
     - 25519 (~> 2.0.2)
     - CocoaAsyncSocket (~> 7.6.5)
@@ -123,6 +139,14 @@ PODS:
     - PromiseKit/CorePromise (~> 6.0)
     - SDWebImage (~> 5.9.1)
     - WuKongBase
+  - WuKongMoment (0.1.0):
+    - SDWebImage (~> 5.9.1)
+    - WuKongBase
+    - WuKongIMSDK
+  - WuKongSmallVideo (0.1.0):
+    - PromiseKit/CorePromise (~> 6.0)
+    - WuKongBase
+    - WuKongIMSDK
   - YBImageBrowser/NOSD (3.0.9):
     - YYImage
   - YYImage (1.0.4):
@@ -147,11 +171,16 @@ DEPENDENCIES:
   - Socket.IO-Client-Swift
   - SocketRocket
   - SSZipArchive (~> 2.2.3)
+  - WuKongAdvanced (from `./Modules/WuKongAdvanced`)
   - WuKongBase (from `./Modules/WuKongBase`)
   - WuKongContacts (from `./Modules/WuKongContacts`)
   - WuKongDataSource (from `./Modules/WuKongDataSource`)
+  - WuKongFile (from `./Modules/WuKongFile`)
+  - WuKongGroupManager (from `./Modules/WuKongGroupManager`)
   - WuKongIMSDK (from `./Modules/WuKongIMiOSSDK`)
   - WuKongLogin (from `./Modules/WuKongLogin`)
+  - WuKongMoment (from `./Modules/WuKongMoment`)
+  - WuKongSmallVideo (from `./Modules/WuKongSmallVideo`)
   - YBImageBrowser/NOSD (from `https://github.com/tangtaoit/YBImageBrowser.git`)
   - YYImage/WebP (from `https://github.com/tangtaoit/YYImage.git`)
 
@@ -173,6 +202,7 @@ SPEC REPOS:
     - lottie-ios
     - M80AttributedLabel
     - Masonry
+    - MBCircularProgressBar
     - MBProgressHUD
     - MJRefresh
     - MMDB-Swift
@@ -197,16 +227,26 @@ EXTERNAL SOURCES:
     :git: https://github.com/tangtaoit/AsyncDisplayKit.git
   librlottie:
     :git: https://github.com/tangtaoit/librlottie.git
+  WuKongAdvanced:
+    :path: "./Modules/WuKongAdvanced"
   WuKongBase:
     :path: "./Modules/WuKongBase"
   WuKongContacts:
     :path: "./Modules/WuKongContacts"
   WuKongDataSource:
     :path: "./Modules/WuKongDataSource"
+  WuKongFile:
+    :path: "./Modules/WuKongFile"
+  WuKongGroupManager:
+    :path: "./Modules/WuKongGroupManager"
   WuKongIMSDK:
     :path: "./Modules/WuKongIMiOSSDK"
   WuKongLogin:
     :path: "./Modules/WuKongLogin"
+  WuKongMoment:
+    :path: "./Modules/WuKongMoment"
+  WuKongSmallVideo:
+    :path: "./Modules/WuKongSmallVideo"
   YBImageBrowser:
     :git: https://github.com/tangtaoit/YBImageBrowser.git
   YYImage:
@@ -245,6 +285,7 @@ SPEC CHECKSUMS:
   lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
   M80AttributedLabel: 77fedfe63804c989a6de0fa4d400ea8cad3ab441
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   MMDB-Swift: c1089703b65a3d1301fc92ff8f55d4794a569214
@@ -260,17 +301,22 @@ SPEC CHECKSUMS:
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   TOCropViewController: da59f531f8ac8a94ef6d6c0fc34009350f9e8bfe
-  TZImagePickerController: 2cad3db94ba70eb947d26c10ff5c66c9a93798c8
-  WuKongBase: 6016ea1d7e677a7188addae3159f4fabf52a6a3a
+  TZImagePickerController: 456f470b5dea97b37226ec7a694994a8663340b2
+  WuKongAdvanced: f2a1f468cc928e6898579ea08b06b1aea978bee6
+  WuKongBase: f824a6552c92f17f062169cae742d5d437f84c6e
   WuKongContacts: c134c3e6f8243bb6fff32382a3b2ed58418df15b
   WuKongDataSource: 46cf01983c85d1134ae19c13700928d8a980d789
+  WuKongFile: 2a71dcada45fb6fedc07aefed7ec303aab36c402
+  WuKongGroupManager: 7c217f927c00d914afc2db1fc279daf2619f1fe4
   WuKongIMSDK: 9c93f5e5e5038e0f11618cb1f87c85c09edcca79
   WuKongLogin: aafe2112c28e7c69d8ba987bb05d374214a428b1
+  WuKongMoment: 507b82d61e9138f7ab622961be6df147e5cca5fb
+  WuKongSmallVideo: 280057437bec40076276b927bd3220f77b47e589
   YBImageBrowser: 7ecc8bf33ffa5f3b94c397c29b4f3638dd37f527
   YYImage: 6db68da66f20d9f169ceb94dfb9947c3867b9665
   ZLImageEditor: ee86f044fb7c5dec6b5de49eb7bb6fd42286f2ae
   ZLPhotoBrowser: 6fb0eff03c8269001e29ef233e7bdab0691e05fe
 
-PODFILE CHECKSUM: a1b71bac37719a64384e4000eaece682861b8d11
+PODFILE CHECKSUM: 8476a0ba8843a713af626ddb5022876775af2fbf
 
 COCOAPODS: 1.16.2

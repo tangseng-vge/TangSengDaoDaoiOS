@@ -1,0 +1,16 @@
+PODS:
+  - LiMaoMoment (0.1.0)
+
+DEPENDENCIES:
+  - LiMaoMoment (from `../`)
+
+EXTERNAL SOURCES:
+  LiMaoMoment:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LiMaoMoment: 3010299685c5f403659fa6711709240e92e45410
+
+PODFILE CHECKSUM: 7317d72c81752a72063e8d2e0a2d6cd6305ee90a
+
+COCOAPODS: 1.9.3

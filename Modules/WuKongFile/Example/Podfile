@@ -1,0 +1,6 @@
+use_frameworks!
+target 'LiMaoFile_Tests' do
+  pod 'LiMaoFile', :path => '../'
+  
+  
+end

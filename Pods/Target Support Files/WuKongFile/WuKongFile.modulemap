@@ -1,0 +1,6 @@
+framework module WuKongFile {
+  umbrella header "WuKongFile-umbrella.h"
+
+  export *
+  module * { export * }
+}

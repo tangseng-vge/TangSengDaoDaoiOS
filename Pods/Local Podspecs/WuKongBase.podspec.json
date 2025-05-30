@@ -1,6 +1,6 @@
 {
   "name": "WuKongBase",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "A short description of WuKongBase.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/tangtaoit/WuKongBase",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/tangtaoit/WuKongBase.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "12.0"
@@ -68,7 +68,7 @@
       "~> 1.0.4"
     ],
     "TZImagePickerController": [
-      "~>3.6.4"
+      "~>3.8.6"
     ],
     "LBXScan/LBXNative": [
       "~> 2.5"

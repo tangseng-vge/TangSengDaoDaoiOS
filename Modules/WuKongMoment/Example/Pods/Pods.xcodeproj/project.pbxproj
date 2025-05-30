@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D141A4075D5D151CB9B4D4D9A9225B7 /* LiMaoMoment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D2C35845D27052CDB1C801EB687FC52 /* LiMaoMoment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69E18549C269F0DDA371D410ED43B222 /* Pods-LiMaoMoment_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F6776AAF46B5579DD2021F11A6D5B3C /* Pods-LiMaoMoment_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		794A0CDC9C96EF70BC79296D6AA81E2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A2BC2EF20D068A34AB77B01BCFABFC20 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2B2B1FF7BAB5BB830161A2824B8C2 /* ReplaceMe.m */; };
+		B4C186AECC8B2A893FC1DED997D0D845 /* Pods-LiMaoMoment_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D06AF193438B064FAA903448B9B093 /* Pods-LiMaoMoment_Tests-dummy.m */; };
+		BAD6ADD0171FCAA49200FE7DA09831DB /* LiMaoMoment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F2CAEF477A54CD1CA14ABF6DD197EB /* LiMaoMoment-dummy.m */; };
+		D4523E6D97475E81CD3651DF61384060 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D49DD7B4318E5C8A7CCD595D35FF60F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1B537B77FCDF1A050F7DD1E953A67AD;
+			remoteInfo = LiMaoMoment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05C0C1ED8F8EA4FD788DC03F3915C780 /* LiMaoMoment.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LiMaoMoment.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1479DD07FA86804CEBF897CA85732678 /* LiMaoMoment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LiMaoMoment.framework; path = LiMaoMoment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22F2CAEF477A54CD1CA14ABF6DD197EB /* LiMaoMoment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LiMaoMoment-dummy.m"; sourceTree = "<group>"; };
+		291E8595982DCFC63C2AB7EB74295E31 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		2D2C35845D27052CDB1C801EB687FC52 /* LiMaoMoment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiMaoMoment-umbrella.h"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3EECC70639A1F58D58C88ACEE8979FA5 /* Pods-LiMaoMoment_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LiMaoMoment_Tests.modulemap"; sourceTree = "<group>"; };
+		76A2B2B1FF7BAB5BB830161A2824B8C2 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = LiMaoMoment/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		8D481E4A9115D3A2EC8409F83039D3C9 /* LiMaoMoment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LiMaoMoment.modulemap; sourceTree = "<group>"; };
+		8F66CEA0F9324BECC45113A1C71E0CDA /* LiMaoMoment-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LiMaoMoment-Info.plist"; sourceTree = "<group>"; };
+		8F6776AAF46B5579DD2021F11A6D5B3C /* Pods-LiMaoMoment_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiMaoMoment_Tests-umbrella.h"; sourceTree = "<group>"; };
+		92D019A4225A755680F30181BCBC5411 /* LiMaoMoment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LiMaoMoment.debug.xcconfig; sourceTree = "<group>"; };
+		98131F0877346B28A082C1519A96CF79 /* LiMaoMoment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LiMaoMoment.release.xcconfig; sourceTree = "<group>"; };
+		99066F68A3F6A34B3E8A49698034C5F8 /* Pods-LiMaoMoment_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiMaoMoment_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9D74981006DB0F6B43D7C7CC039DDF79 /* Pods-LiMaoMoment_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiMaoMoment_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F1BB08397DDBEA5EBC1186143BAA9CA /* Pods-LiMaoMoment_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiMaoMoment_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		A4D0BC8B5CFBE1B183843C60F0E85709 /* Pods-LiMaoMoment_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiMaoMoment_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A7223302BBCAA09574641E50060257D3 /* LiMaoMoment-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiMaoMoment-prefix.pch"; sourceTree = "<group>"; };
+		A7D06AF193438B064FAA903448B9B093 /* Pods-LiMaoMoment_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiMaoMoment_Tests-dummy.m"; sourceTree = "<group>"; };
+		B69D6D6CCA092D329D7681DBA582208A /* Pods_LiMaoMoment_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LiMaoMoment_Tests.framework; path = "Pods-LiMaoMoment_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9842B31A08CA662E33099C47707B669 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		EB0D82DBC235B0ACD452FADC9173F10A /* Pods-LiMaoMoment_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiMaoMoment_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F711DA9AC6D9D2EC6CCCE954EBB74C66 /* Pods-LiMaoMoment_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiMaoMoment_Tests-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		223A9E16F3220FA9F244E88CC81698DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794A0CDC9C96EF70BC79296D6AA81E2D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2E194CAB9DEAB442A42DBEBDBA10C4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4523E6D97475E81CD3651DF61384060 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05AEA140446C50675F500D1166091BA2 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94B0810E15BC922A25361EB1E5C2BC44 /* LiMaoMoment */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		1C15218FBD271074F776E7FB130BA20A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F89B1426CC4821DFA50305946DFBD5D /* Pods-LiMaoMoment_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3751B76E49398E48CFE3FAA89B58ED12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1479DD07FA86804CEBF897CA85732678 /* LiMaoMoment.framework */,
+				B69D6D6CCA092D329D7681DBA582208A /* Pods_LiMaoMoment_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F89B1426CC4821DFA50305946DFBD5D /* Pods-LiMaoMoment_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3EECC70639A1F58D58C88ACEE8979FA5 /* Pods-LiMaoMoment_Tests.modulemap */,
+				EB0D82DBC235B0ACD452FADC9173F10A /* Pods-LiMaoMoment_Tests-acknowledgements.markdown */,
+				9D74981006DB0F6B43D7C7CC039DDF79 /* Pods-LiMaoMoment_Tests-acknowledgements.plist */,
+				A7D06AF193438B064FAA903448B9B093 /* Pods-LiMaoMoment_Tests-dummy.m */,
+				9F1BB08397DDBEA5EBC1186143BAA9CA /* Pods-LiMaoMoment_Tests-frameworks.sh */,
+				F711DA9AC6D9D2EC6CCCE954EBB74C66 /* Pods-LiMaoMoment_Tests-Info.plist */,
+				8F6776AAF46B5579DD2021F11A6D5B3C /* Pods-LiMaoMoment_Tests-umbrella.h */,
+				A4D0BC8B5CFBE1B183843C60F0E85709 /* Pods-LiMaoMoment_Tests.debug.xcconfig */,
+				99066F68A3F6A34B3E8A49698034C5F8 /* Pods-LiMaoMoment_Tests.release.xcconfig */,
+			);
+			name = "Pods-LiMaoMoment_Tests";
+			path = "Target Support Files/Pods-LiMaoMoment_Tests";
+			sourceTree = "<group>";
+		};
+		94B0810E15BC922A25361EB1E5C2BC44 /* LiMaoMoment */ = {
+			isa = PBXGroup;
+			children = (
+				76A2B2B1FF7BAB5BB830161A2824B8C2 /* ReplaceMe.m */,
+				D9CFFAA3B31436520AD61F03DE1FA37A /* Pod */,
+				C538DDFB9D98E85976A4010084A7F0AD /* Support Files */,
+			);
+			name = LiMaoMoment;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C538DDFB9D98E85976A4010084A7F0AD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D481E4A9115D3A2EC8409F83039D3C9 /* LiMaoMoment.modulemap */,
+				22F2CAEF477A54CD1CA14ABF6DD197EB /* LiMaoMoment-dummy.m */,
+				8F66CEA0F9324BECC45113A1C71E0CDA /* LiMaoMoment-Info.plist */,
+				A7223302BBCAA09574641E50060257D3 /* LiMaoMoment-prefix.pch */,
+				2D2C35845D27052CDB1C801EB687FC52 /* LiMaoMoment-umbrella.h */,
+				92D019A4225A755680F30181BCBC5411 /* LiMaoMoment.debug.xcconfig */,
+				98131F0877346B28A082C1519A96CF79 /* LiMaoMoment.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LiMaoMoment";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				05AEA140446C50675F500D1166091BA2 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				3751B76E49398E48CFE3FAA89B58ED12 /* Products */,
+				1C15218FBD271074F776E7FB130BA20A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9CFFAA3B31436520AD61F03DE1FA37A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				291E8595982DCFC63C2AB7EB74295E31 /* LICENSE */,
+				05C0C1ED8F8EA4FD788DC03F3915C780 /* LiMaoMoment.podspec */,
+				D9842B31A08CA662E33099C47707B669 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1C560D83E37CAC2D3933CBE25C2D239E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E18549C269F0DDA371D410ED43B222 /* Pods-LiMaoMoment_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B0A9D8B8CDD7916DC47C34865F70C0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D141A4075D5D151CB9B4D4D9A9225B7 /* LiMaoMoment-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		06123F35970CA7D63C860DD9BEBE1823 /* Pods-LiMaoMoment_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA123E174DC7691B47933E0890BBAC18 /* Build configuration list for PBXNativeTarget "Pods-LiMaoMoment_Tests" */;
+			buildPhases = (
+				1C560D83E37CAC2D3933CBE25C2D239E /* Headers */,
+				2645620B4E68FD5084B26B227ECBAB49 /* Sources */,
+				223A9E16F3220FA9F244E88CC81698DE /* Frameworks */,
+				0A39526C29C1901D083655CAC107C3B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A93A513AF4C7857536716D88A7DC84BE /* PBXTargetDependency */,
+			);
+			name = "Pods-LiMaoMoment_Tests";
+			productName = "Pods-LiMaoMoment_Tests";
+			productReference = B69D6D6CCA092D329D7681DBA582208A /* Pods_LiMaoMoment_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D1B537B77FCDF1A050F7DD1E953A67AD /* LiMaoMoment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 156737F0FE5B987DFE9B477A1712696F /* Build configuration list for PBXNativeTarget "LiMaoMoment" */;
+			buildPhases = (
+				6B0A9D8B8CDD7916DC47C34865F70C0A /* Headers */,
+				88F12A9684DFF8D67B150D8739E85522 /* Sources */,
+				A2E194CAB9DEAB442A42DBEBDBA10C4B /* Frameworks */,
+				4753BB012AB47A45C44B042FA745F52F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiMaoMoment;
+			productName = LiMaoMoment;
+			productReference = 1479DD07FA86804CEBF897CA85732678 /* LiMaoMoment.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 3751B76E49398E48CFE3FAA89B58ED12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1B537B77FCDF1A050F7DD1E953A67AD /* LiMaoMoment */,
+				06123F35970CA7D63C860DD9BEBE1823 /* Pods-LiMaoMoment_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A39526C29C1901D083655CAC107C3B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4753BB012AB47A45C44B042FA745F52F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2645620B4E68FD5084B26B227ECBAB49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4C186AECC8B2A893FC1DED997D0D845 /* Pods-LiMaoMoment_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88F12A9684DFF8D67B150D8739E85522 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD6ADD0171FCAA49200FE7DA09831DB /* LiMaoMoment-dummy.m in Sources */,
+				A2BC2EF20D068A34AB77B01BCFABFC20 /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A93A513AF4C7857536716D88A7DC84BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LiMaoMoment;
+			target = D1B537B77FCDF1A050F7DD1E953A67AD /* LiMaoMoment */;
+			targetProxy = 9D49DD7B4318E5C8A7CCD595D35FF60F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		170668594F3B601273ED5053D81F9837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98131F0877346B28A082C1519A96CF79 /* LiMaoMoment.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LiMaoMoment/LiMaoMoment-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LiMaoMoment/LiMaoMoment-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LiMaoMoment/LiMaoMoment.modulemap";
+				PRODUCT_MODULE_NAME = LiMaoMoment;
+				PRODUCT_NAME = LiMaoMoment;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1851DB2AC1E8A9B2C8C3143E7D88B127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99066F68A3F6A34B3E8A49698034C5F8 /* Pods-LiMaoMoment_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LiMaoMoment_Tests/Pods-LiMaoMoment_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LiMaoMoment_Tests/Pods-LiMaoMoment_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9B833FE04E6BB31D8CDB82A4F3A43890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92D019A4225A755680F30181BCBC5411 /* LiMaoMoment.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LiMaoMoment/LiMaoMoment-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LiMaoMoment/LiMaoMoment-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LiMaoMoment/LiMaoMoment.modulemap";
+				PRODUCT_MODULE_NAME = LiMaoMoment;
+				PRODUCT_NAME = LiMaoMoment;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CB823F505776E476F1883CF2D78302E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4D0BC8B5CFBE1B183843C60F0E85709 /* Pods-LiMaoMoment_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LiMaoMoment_Tests/Pods-LiMaoMoment_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LiMaoMoment_Tests/Pods-LiMaoMoment_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		156737F0FE5B987DFE9B477A1712696F /* Build configuration list for PBXNativeTarget "LiMaoMoment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B833FE04E6BB31D8CDB82A4F3A43890 /* Debug */,
+				170668594F3B601273ED5053D81F9837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
+				B0087CB4594321EF41619F3181FE120E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA123E174DC7691B47933E0890BBAC18 /* Build configuration list for PBXNativeTarget "Pods-LiMaoMoment_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB823F505776E476F1883CF2D78302E9 /* Debug */,
+				1851DB2AC1E8A9B2C8C3143E7D88B127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

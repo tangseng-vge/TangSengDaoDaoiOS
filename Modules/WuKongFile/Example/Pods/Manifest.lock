@@ -1,0 +1,16 @@
+PODS:
+  - LiMaoFile (0.1.0)
+
+DEPENDENCIES:
+  - LiMaoFile (from `../`)
+
+EXTERNAL SOURCES:
+  LiMaoFile:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LiMaoFile: 10aaadcf7e86572e7a578f438bda5ad627ffd751
+
+PODFILE CHECKSUM: c8b8cf7bb45980f2abbb01dc4c2a40e01b0df1c9
+
+COCOAPODS: 1.8.0

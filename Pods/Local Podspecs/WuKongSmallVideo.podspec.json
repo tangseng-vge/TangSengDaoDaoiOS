@@ -1,0 +1,37 @@
+{
+  "name": "WuKongSmallVideo",
+  "version": "0.1.0",
+  "summary": "A short description of WuKongSmallVideo.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/tangtaoit/WuKongSmallVideo",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "tangtaoit": "tt@tgo.ai"
+  },
+  "source": {
+    "git": "https://github.com/tangtaoit/WuKongSmallVideo.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "resource_bundles": {
+    "WuKongSmallVideo_images": [
+      "WuKongSmallVideo/Assets/Images.xcassets"
+    ]
+  },
+  "resources": [
+    "WuKongSmallVideo/Assets/Lang"
+  ],
+  "source_files": "WuKongSmallVideo/Classes/**/*",
+  "dependencies": {
+    "WuKongBase": [],
+    "PromiseKit/CorePromise": [
+      "~> 6.0"
+    ],
+    "WuKongIMSDK": []
+  }
+}
