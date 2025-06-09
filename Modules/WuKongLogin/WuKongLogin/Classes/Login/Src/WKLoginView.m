@@ -115,11 +115,13 @@
 }
 - (UIButton *)countryBtn {
     if(!_countryBtn) {
-        _countryBtn = [[UIButton alloc] initWithFrame:CGRectMake(0.0f, self.mobileBoxView.lim_height/2.0f - 10.0f, 70.0f, 20.0f)];
+//        _countryBtn = [[UIButton alloc] initWithFrame:CGRectMake(0.0f, self.mobileBoxView.lim_height/2.0f - 10.0f, 70.0f, 20.0f)];
+        _countryBtn = [[UIButton alloc] initWithFrame:CGRectMake(0.0f, self.mobileBoxView.lim_height/2.0f - 10.0f, 0.0f, 20.0f)];
         
         [[_countryBtn titleLabel] setFont:WKApp.shared.config.defaultFont];
         [_countryBtn setTitleColor:WKApp.shared.config.defaultTextColor forState:UIControlStateNormal];
         [_countryBtn addTarget:self action:@selector(countryBtnPressed) forControlEvents:UIControlEventTouchUpInside];
+        _countryBtn.hidden = YES;
     }
     return _countryBtn;
 }
@@ -128,8 +130,11 @@
 }
 - (UIImageView *)downArrowView {
     if(!_downArrowView) {
-        _downArrowView = [[UIImageView alloc] initWithFrame:CGRectMake(self.countryBtn.lim_right-12.0f, self.mobileBoxView.lim_height/2.0f - 6.0f, 12.0f, 12.0f)];
+//        _downArrowView = [[UIImageView alloc] initWithFrame:CGRectMake(self.countryBtn.lim_right-12.0f, self.mobileBoxView.lim_height/2.0f - 6.0f, 12.0f, 12.0f)];
+        _downArrowView = [[UIImageView alloc] initWithFrame:CGRectMake(0.0f, self.mobileBoxView.lim_height/2.0f - 6.0f, 12.0f, 12.0f)];
+
         [_downArrowView setImage:[[WKApp shared] loadImage:@"ArrowDown" moduleID:@"WuKongLogin"]];
+        _downArrowView.hidden = YES;
     }
     return _downArrowView;
 }
@@ -144,10 +149,12 @@
 
 -(UITextField*) mobileTextField {
     if(!_mobileTextField) {
-        CGFloat left =self.countrySpliteLineView.lim_right+20.0f;
+//        CGFloat left =self.countrySpliteLineView.lim_right+20.0f;
+        CGFloat left = 20.0f;
         _mobileTextField = [[UITextField alloc] initWithFrame:CGRectMake(left, self.mobileBoxView.lim_height/2.0f - 20.0f, WKScreenWidth - left - 20.0f, 40.0f)];
-        _mobileTextField.placeholder = LLang(@"请输入手机号");
-        _mobileTextField.keyboardType = UIKeyboardTypePhonePad;
+//        _mobileTextField.placeholder = LLang(@"请输入手机号");
+        _mobileTextField.placeholder = LLang(@"请输入账号");
+        _mobileTextField.keyboardType = UIKeyboardTypeDefault;
         _mobileTextField.returnKeyType = UIReturnKeyNext;
         _mobileTextField.delegate = self;
     }
@@ -356,7 +363,7 @@
     if(textField == self.mobileTextField) {
         NSInteger strLength = textField.text.length - range.length + string.length;
         if([_country isEqualToString:@"86"]) {
-            return (strLength <= 11); // 大陆电话号码为11位
+            return (strLength <= 20); // 大陆电话号码为11位
         }
         
     }

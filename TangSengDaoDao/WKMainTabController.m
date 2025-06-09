@@ -12,6 +12,7 @@
 #import "WKConversationListVC.h"
 #import "WKContactsVC.h"
 #import "WKMeVC.h"
+#import "UIColor+WK.h"
 @interface WKMainTabController ()<UITabBarControllerDelegate>
 
 @property(nonatomic,strong) LOTAnimationView *currentLOTAnimationView;
@@ -36,9 +37,9 @@
         [self.tabBar setBackgroundColor:[UIColor whiteColor]];
     }
    
-    [self setupChildVC:WKConversationListVC.class title:@"" andImage:@"HomeTab" andSelectImage:@"HomeTabSelected"];
-    [self setupChildVC:WKContactsVC.class title:@"" andImage:@"ContactsTab" andSelectImage:@"ContactsTabSelected"];
-    [self setupChildVC:WKMeVC.class title:@"" andImage:@"MeTab" andSelectImage:@"MeTabSelected"];
+    [self setupChildVC:WKConversationListVC.class title:NSLocalizedString(@"聊天", nil) andImage:@"HomeTab" andSelectImage:@"HomeTabSelected"];
+    [self setupChildVC:WKContactsVC.class title:NSLocalizedString(@"联系人", nil) andImage:@"ContactsTab" andSelectImage:@"ContactsTabSelected"];
+    [self setupChildVC:WKMeVC.class title:NSLocalizedString(@"我的", nil) andImage:@"MeTab" andSelectImage:@"MeTabSelected"];
 
 }
 
@@ -46,13 +47,22 @@
     
     UIViewController * vcInstall = [[vc alloc] init];
     //VC.view.backgroundColor = UIColor.whiteColor;
+    [vcInstall.tabBarItem setTitleTextAttributes:@{
+        NSForegroundColorAttributeName: [UIColor colorWithRed:223/255.0 green:107/255.0 blue:78/255.0 alpha:0.5],
+        NSFontAttributeName: [UIFont systemFontOfSize:12.0]
+    } forState:UIControlStateNormal];
+
+    [vcInstall.tabBarItem setTitleTextAttributes:@{
+        NSForegroundColorAttributeName: [UIColor colorWithRed:223/255.0 green:107/255.0 blue:78/255.0 alpha:1.0],
+        NSFontAttributeName: [UIFont boldSystemFontOfSize:12.0]
+    } forState:UIControlStateSelected];
+    
     vcInstall.tabBarItem.title = title;
     vcInstall.tabBarItem.image = [[UIImage imageNamed:image]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     vcInstall.tabBarItem.selectedImage = [[UIImage imageNamed:selectImage]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    vcInstall.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+    vcInstall.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, 0, 0);
     [self addChildViewController:vcInstall];
 }
-
 
 -(void) dealloc {
     WKLogDebug(@"WKMainTabController dealloc");

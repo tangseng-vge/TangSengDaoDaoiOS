@@ -109,7 +109,7 @@ typedef enum {
                                                 blue:235.0 / 255.0
                                                alpha:1.0f] forState:UIControlStateNormal];
     self.registerBtn = registerBtn;
-    [self.registerBtn addTarget:self action:@selector(registerBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [self.registerBtn addTarget:self action:@selector(confirmBtn:) forControlEvents:UIControlEventTouchUpInside];
     self.registerBtn.tag = ZCTradeInputViewButtonTypeRegisterBtn;
 }
 

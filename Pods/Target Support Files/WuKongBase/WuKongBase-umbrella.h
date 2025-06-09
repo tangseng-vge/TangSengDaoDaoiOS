@@ -284,6 +284,8 @@
 #import "WKScreenProtectionView.h"
 #import "WKBlacklistCell.h"
 #import "WKBlacklistVC.h"
+#import "WKChangePasswordVC.h"
+#import "WKChangePasswordVM.h"
 #import "WKCommonSettingVC.h"
 #import "WKCommonSettingVM.h"
 #import "WKDarkModeVC.h"

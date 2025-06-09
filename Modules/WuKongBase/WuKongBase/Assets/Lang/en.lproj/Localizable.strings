@@ -453,6 +453,7 @@
 "验证您的电话号码"="Verify your phone number";
 "%@会发送短信验证手机号码，请输入您的验证码"="%@ will send a text message to verify the mobile number, please enter your verification code";
 "请输入手机号"="Please enter phone number";
+"请输入账号"="Please enter your account";
 "短信验证码"="SMS verification code";
 "获取验证码"="Send";
 "请输入登录密码"="Please enter your password";
@@ -576,3 +577,10 @@
 "文件"="File";
 "图片/视频"="Images/Videos";
 "[系统消息]" = "[System Message]";
+
+// add new
+"修改密码"="Change Password";
+"请输入新密码"="Please enter new password";
+"请确认新密码"="Please confirm your new password";
+"修改中"="Under Modification";
+"密码修改成功"="Password changed successfully";

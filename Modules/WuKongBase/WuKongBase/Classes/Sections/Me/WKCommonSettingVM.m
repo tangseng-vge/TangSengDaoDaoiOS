@@ -11,6 +11,7 @@
 #import "WKLanguageVC.h"
 #import "NSString+WKLocalized.h"
 #import "WKModuleVC.h"
+#import "WKChangePasswordVC.h"
 
 @interface WKCommonSettingVM ()
 
@@ -33,6 +34,7 @@
 }
 
 -(void) registerItems {
+    
     // 深色模式
     [[WKApp shared] setMethod:@"commonsetting.notify" handler:^id _Nullable(id  _Nonnull param) {
         BOOL supportDarkMode = NO;
@@ -177,23 +179,40 @@
         };
     } category:WKPOINT_CATEGORY_COMMONSETTING sort:70000];
     
-    // 模块
-    [[WKApp shared] setMethod:@"commonsetting.modules" handler:^id _Nullable(id  _Nonnull param) {
+//    // 模块
+//    [[WKApp shared] setMethod:@"commonsetting.modules" handler:^id _Nullable(id  _Nonnull param) {
+//    
+//        return  @{
+//            @"height":WKSectionHeight,
+//            @"items":@[
+//                    @{
+//                        @"class":WKLabelItemModel.class,
+//                        @"label":LLang(@"功能模块"),
+//                        @"onClick":^{
+//                            WKModuleVC *vc = [WKModuleVC new];
+//                            [[WKNavigationManager shared] pushViewController:vc animated:YES];
+//                        }
+//                    },
+//            ],
+//        };
+//    } category:WKPOINT_CATEGORY_COMMONSETTING sort:69000];
     
+    // 修改密码
+    [[WKApp shared] setMethod:@"commonsetting.changepassword" handler:^id _Nullable(id  _Nonnull param) {
         return  @{
             @"height":WKSectionHeight,
             @"items":@[
                     @{
                         @"class":WKLabelItemModel.class,
-                        @"label":LLang(@"功能模块"),
+                        @"label":LLang(@"修改密码"),
                         @"onClick":^{
-                            WKModuleVC *vc = [WKModuleVC new];
+                            WKChangePasswordVC *vc = [WKChangePasswordVC new];
                             [[WKNavigationManager shared] pushViewController:vc animated:YES];
                         }
                     },
             ],
         };
-    } category:WKPOINT_CATEGORY_COMMONSETTING sort:69000];
+    } category:WKPOINT_CATEGORY_COMMONSETTING sort:68000];
     
     // 版本信息
     [[WKApp shared] setMethod:@"commonsetting.version" handler:^id _Nullable(id  _Nonnull param) {
