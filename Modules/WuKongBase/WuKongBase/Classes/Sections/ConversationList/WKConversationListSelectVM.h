@@ -27,6 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 是否开启多选
 @property(nonatomic,assign) BOOL multiple;
+@property(nonatomic,strong,readonly) NSMutableArray<WKChannel*> *selectedChannels;
+
 
 @end
 

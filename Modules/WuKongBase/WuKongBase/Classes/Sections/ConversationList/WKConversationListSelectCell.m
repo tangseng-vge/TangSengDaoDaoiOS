@@ -153,9 +153,9 @@
         _checkBox.lineWidth = 1.0f;
     //    self.checkBox.tintColor = [UIColor grayColor];
         _checkBox.delegate = self;
+        _checkBox.userInteractionEnabled = NO;
     }
     return _checkBox;
 }
-
 
 @end

@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic,copy) void(^onSelect)(WKChannel*channel);
 
+@property(nonatomic,copy) void(^onMultipleSelect)(NSArray<WKChannel*> *selectedChannels);
+
 @end
 
 

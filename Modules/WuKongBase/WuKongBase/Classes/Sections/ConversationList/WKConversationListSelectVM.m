@@ -11,7 +11,8 @@
 @interface WKConversationListSelectVM ()
 @property(nonatomic,strong)  NSArray<WKConversationWrapModel*> *conversationWrapModels;
 
-@property(nonatomic,strong) NSMutableArray<WKChannel*> *selectedChannels;
+@property(nonatomic,strong,readwrite) NSMutableArray<WKChannel*> *selectedChannels;
+
 @end
 
 @implementation WKConversationListSelectVM
@@ -49,9 +50,11 @@
                             [weakSelf.selectedChannels removeObject:conversation.channel];
                         }else {
                             [weakSelf.selectedChannels addObject:conversation.channel];
-                            
                         }
                         [weakSelf reloadData];
+                        if(weakSelf.delegate && [weakSelf.delegate respondsToSelector:@selector(conversationListSelectVM:didSelected:)]) {
+                            [weakSelf.delegate conversationListSelectVM:weakSelf didSelected:weakSelf.selectedChannels];
+                        }
                     }else {
                         if(weakSelf.delegate && [weakSelf.delegate respondsToSelector:@selector(conversationListSelectVM:didSelected:)]) {
                             [weakSelf.delegate conversationListSelectVM:weakSelf didSelected:@[conversation.channel]];
