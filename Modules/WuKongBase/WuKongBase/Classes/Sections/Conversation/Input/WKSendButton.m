@@ -55,4 +55,9 @@
 //   return  [[WKResource shared] resourceForImage:name podName:@"WuKongBase_images"];
 }
 
+- (void)setShow:(BOOL)show {
+    _show = show;
+    self.hidden = !show;
+}
+
 @end

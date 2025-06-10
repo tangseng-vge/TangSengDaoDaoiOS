@@ -543,3 +543,58 @@
 }
 
 @end
+
+
+
+@implementation WKFuncGroupVoiceItemView
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    UIView *superView = self.superview;
+    self.lim_size = CGSizeMake(30, 30);
+//    if(self.changeToBig) {
+//        self.btn.lim_size = CGSizeMake(iconBigItemWidth, iconBigItemHeight);
+//        self.titleLbl.hidden = NO;
+//        CGFloat titleLblTopSpace = 4.0f;
+//       CGFloat  contentHeight =  self.btn.lim_height + titleLblTopSpace + self.titleLbl.lim_height;
+//        self.btn.lim_top = self.lim_height/2.0f - contentHeight/2.0f;
+//        self.titleLbl.lim_top = self.btn.lim_bottom + titleLblTopSpace;
+//        self.titleLbl.lim_centerX_parent = self;
+//        self.btn.lim_centerX_parent = self;
+//    }else {
+//        self.btn.lim_size = CGSizeMake(iconItemWidth, iconItemHeight);
+//        self.titleLbl.hidden = YES;
+//        self.btn.lim_centerY_parent = self;
+//        self.btn.lim_centerX_parent = self;
+//        self.titleLbl.lim_top = self.btn.lim_bottom;
+//        self.titleLbl.lim_centerX_parent = self;
+//    }
+    
+    self.btn.lim_size = CGSizeMake(iconItemWidth, iconItemHeight);
+    self.btn.lim_centerY_parent = self;
+    self.btn.lim_centerX_parent = self;
+    
+    if(self.splitView.superview) {
+        self.splitView.lim_left = 0.0f;
+        self.splitView.lim_height = self.lim_height - 20.0f;
+        self.splitView.lim_centerY_parent = self;
+    }
+    if(self.selected) {
+        self.btn.layer.borderWidth = 2.0f;
+        self.btn.layer.cornerRadius = self.btn.lim_height/2.0f;
+        self.btn.layer.borderColor = [UIColor colorWithRed:200.0f/255.0f green:200.0f/255.0f blue:200.0f/255.0f alpha:1.0f].CGColor;
+    }else {
+        self.btn.layer.borderWidth = 0.0f;
+        self.btn.layer.cornerRadius = 0.0f;
+    }
+}
+
+- (void)setShow:(BOOL)show {
+    _show = show;
+    self.hidden = !show;
+}
+
+@end
+
+

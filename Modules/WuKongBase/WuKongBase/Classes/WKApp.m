@@ -1077,11 +1077,11 @@ static  UIBackgroundTaskIdentifier _bgTaskToken;
     } category:WKPOINT_CATEGORY_PANELFUNCITEM];
     
     // voice
-    [self setMethod:WKPOINT_CATEGORY_PANELFUNCITEM_VOICE handler:^id _Nullable(id  _Nonnull param) {
-        WKPanelDefaultFuncItem *item = [[WKPanelVoiceFuncItem alloc] init];
-        item.sort = 2000;
-        return item;
-    } category:WKPOINT_CATEGORY_PANELFUNCITEM];
+//    [self setMethod:WKPOINT_CATEGORY_PANELFUNCITEM_VOICE handler:^id _Nullable(id  _Nonnull param) {
+//        WKPanelDefaultFuncItem *item = [[WKPanelVoiceFuncItem alloc] init];
+//        item.sort = 2000;
+//        return item;
+//    } category:WKPOINT_CATEGORY_PANELFUNCITEM];
     
     // image
     [self setMethod:WKPOINT_CATEGORY_PANELFUNCITEM_IMAGE handler:^id _Nullable(id  _Nonnull param) {

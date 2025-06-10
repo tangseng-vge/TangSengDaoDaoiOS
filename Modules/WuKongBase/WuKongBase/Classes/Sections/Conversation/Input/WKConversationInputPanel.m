@@ -65,6 +65,8 @@
 
 @property(nonatomic,strong) NSArray<UIView*> *textViewRights;
 
+@property(nonatomic,strong) WKFuncGroupVoiceItemView *voiceItemView;
+
 
 @end
 
@@ -108,6 +110,7 @@
     
     [self addSubview:self.conversationPanel];
     
+    [self.messageToolBar addSubview:self.voiceItemView];
     [self.messageToolBar addSubview:self.menusBtn];
     [self.messageToolBar addSubview:self.sendButton];
     
@@ -240,10 +243,10 @@ CGFloat itemSpace = 10.0f;
     
     [self.sendButton layoutSubviews];
     CGFloat sendLeftSpace = 10.0f;
-    if(self.sendButton.show) {
+//    if(self.sendButton.show) {
         
         textViewWidth -= (self.sendButton.lim_width+sendLeftSpace);
-    }
+//    }
     
     self.textView.lim_width = textViewWidth;
     
@@ -256,7 +259,9 @@ CGFloat itemSpace = 10.0f;
     
     self.sendButton.lim_top = self.textView.lim_bottom - self.sendButton.lim_height;
     self.sendButton.lim_left = self.textView.lim_right + sendLeftSpace;
-   
+    
+    self.voiceItemView.lim_top = self.sendButton.lim_top;
+    self.voiceItemView.lim_left = self.sendButton.lim_left;
    
 
     self.funcGroupView.lim_top = self.textView.lim_bottom;
@@ -354,6 +359,7 @@ CGFloat itemSpace = 10.0f;
     if(!_sendButton) {
         CGSize size = CGSizeMake(32.0f, 32.0f);
         _sendButton = [[WKSendButton alloc] initWithFrame:CGRectMake(self.messageToolBar.lim_width, 0.0f, size.width, size.height)];
+        _sendButton.hidden = YES;
         __weak typeof(self) weakSelf = self;
         [_sendButton setOnSend:^{
             [weakSelf inputSendFinished];
@@ -384,6 +390,29 @@ CGFloat itemSpace = 10.0f;
         _textView.delegate = self;
     }
     return _textView;
+}
+
+// add: 把语音按钮从底部移到右边
+- (WKFuncGroupVoiceItemView *)voiceItemView {
+    if (!_voiceItemView) {
+        WKPanelDefaultFuncItem *funcItem = [[WKPanelVoiceFuncItem alloc] init];
+        funcItem.sort = 2000;
+        WKFuncItemButton *btn = [funcItem itemButton:self];
+        __weak typeof(self) weakSelf = self;
+        _voiceItemView = [[WKFuncGroupVoiceItemView alloc] initWithButton:btn scaleZoom:1];
+        [_voiceItemView setOnClick:^(WKFuncGroupItemView *item){
+            // 防止funcItem过早释放，不能相应事件
+            funcItem.sort = 2000;
+            [weakSelf unSelectedItems];
+            item.selected = true;
+            [item triggerClick];
+        }];
+    }
+    return _voiceItemView;
+}
+
+- (void)unSelectedItems {
+    _voiceItemView.selected = false;
 }
 
 // 切换更多面板
@@ -595,6 +624,8 @@ CGFloat itemSpace = 10.0f;
 // 取消所有被选中的功能item
 -(void) unSelectedFuncItems {
     [self.funcGroupView unSelectedItems];
+    
+    [self unSelectedItems];
 }
 
 
@@ -650,6 +681,7 @@ CGFloat itemSpace = 10.0f;
     
     self.textView.text = @"";
     self.sendButton.show = NO;
+    self.voiceItemView.show = YES;
     [self resetInputHeight];
     [self animateInputPanelChange:^{
         if(self.delegate && [self.delegate respondsToSelector:@selector(inputPanelSend:text:)]) {
@@ -744,8 +776,10 @@ CGFloat itemSpace = 10.0f;
     NSString *text = self.textView.text;
     if([[text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] isEqualToString:@""]) {
         self.sendButton.show = false;
+        self.voiceItemView.show = true;
     }else {
         self.sendButton.show = true;
+        self.voiceItemView.show = false;
     }
     [self animateInputPanelChange];
     

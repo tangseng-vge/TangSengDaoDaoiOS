@@ -45,4 +45,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+
+@interface WKFuncGroupVoiceItemView : WKFuncGroupItemView
+
+@property(nonatomic,assign) BOOL show;
+
+@end
+
 NS_ASSUME_NONNULL_END
